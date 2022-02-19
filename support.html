@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+    <!--Font Awesome para los iconos de redes sociales-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Icono de favoritos-->
+    <link rel="shortcut icon" href="img/analytics.png" type="image/x-icon" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Index</a></li>
+                <li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
+                <img class="logo" href="index.html" src="img/logo.svg" alt="logo html" />
+                <li class="nav__item"><a class="nav__link" href="community.html">Community</a></li>
+                <li class="nav__item"><a class="nav__link" href="support.html">Support</a></li>
+                <li class="nav__item"><button class="nav__button"><a class="nav__link"
+                            href="register.html">Register</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="section second--section">
+        <form action="">
+            <fieldset id="fondoFieldset">
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="apellido">Apellido:</label>
+                <br>
+                <input type="text" name="apellido" id="apellido">
+                <br>
+                <label for="Email">Email:</label>
+                <br>
+                <input type="text" name="Email" id="Email">
+                <div>Hombre</div>
+                <input type="radio" name="sexo" value="hombre">
+                <div>Mujer</div>
+                <input type="radio" name="sexo" value="mujer">
+                <br>
+                <div>Acepta terminos y condicines</div>
+                <input type="checkbox" name="acepta" id="1">
+                <br>
+                <label for="Tallas">tallas</label>
+                <select name="Tallas" id="tallas" required>
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+                </select>
+                <br>
+                <label for="mensaje">mensaje</label>
+                <br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                    placeholder="Ingrese aquí sus comentarios"></textarea>
+                <br>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar formulario">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <ul class="nav__footer">
+            <li>Mobile App</li>
+            <li>Community</li>
+            <li>Company</li>
+            <img class="logo__footer" src="img/logo.svg" alt="Logo" />
+            <li>Help desk</li>
+            <li>blog</li>
+            <li>Resources</li>
+        </ul>
+        <hr />
+        <ul class="nav__social">
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
