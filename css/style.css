@@ -1,29 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 body{
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-.grid{
-    display: grid;
-    grid-template-columns: 10% auto auto 10%;
-    grid-template-rows: 10% 20% 30% 30% 10%;
-    grid-template-areas: 
-    "header header header header"
-    "inicio inicio inicio inicio"
-    "publicidad segundo segundo segundo"
-    "publicidad tercero tercero tercero"
-    "footer footer footer footer";
-}
 /*animacion imagenes*/
-
 @keyframes from-right{
     0%{
         opacity: 0%;
@@ -70,20 +52,11 @@ img, svg{
     max-width: 100%;
 }
 
-.header{
-    grid-area: header;
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.navbarback{
     background-color: #514aac;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1;
     box-shadow: 0rem 0.15rem 0.5rem #00004f;
-    align-items: center;
     animation: from-up 1.5s ease;
+    
     
 }
 
@@ -126,14 +99,7 @@ img, svg{
     cursor: pointer;
 }
 
-.container{
-    width: 80%;
-    max-width: 1280px;
-    display: flex;
-    flex-direction: row;
 
-
-}
 
 .section{
     background-position: center;
@@ -147,29 +113,7 @@ img, svg{
     align-content: center;
 }
 
-.first--section{
-    grid-area: inicio;
-   /*  background-image: url(/img/wave-haikei.svg); */
-    background-image: url(/img/wave-haikei2.svg);
 
-}
-
-/* .second--section{
-    background-image: url(/img/wave-haikei2.svg);
-
-} */
-
-section#segundo{
-    grid-area: segundo;
-}
-
-section#tercero{
-    grid-area: tercero;
-}
-
-section#publicidad{
-    grid-area: publicidad;
-}
 
 .second--section p{
     width: 50%;
@@ -216,6 +160,7 @@ section#publicidad{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 3rem;
     align-items: center;
 }
 
@@ -250,14 +195,6 @@ section#publicidad{
     color:#F3EFF5;
 }
 
-/* .title--Community{
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-/* para llamar por clase */
 
 .flex_par{
     display: flex;
@@ -272,13 +209,7 @@ section#publicidad{
     background-color: #7986cb;
     color: #F3EFF5;
     box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
+    width: auto;
     height: auto;
     transition: all 2s;
     
@@ -293,12 +224,9 @@ section#publicidad{
     box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
     text-align: center;
     cursor: pointer;
-    width: 100px;
+    width: 150px;
     height: auto;
     transition: all 2s;
-    
-    
-
 }
 
 .button__secondSection{
@@ -310,7 +238,7 @@ section#publicidad{
     box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
     text-align: center;
     cursor: pointer;
-    width: 100px;
+    width: 150px;
     height: auto;
     transition: all 2s;
 
@@ -326,7 +254,7 @@ section#publicidad{
     box-shadow: 0rem 0rem 0.5rem 0rem #F3EFF5;
     text-align: center;
     cursor: pointer;
-    width: 100px;
+    width: 150px;
     height: auto;
     
     
@@ -342,7 +270,7 @@ section#publicidad{
     box-shadow: 0rem 0rem 0.5rem 0rem #F3EFF5;
     text-align: center;
     cursor: pointer;
-    width: 100px;
+    width: 150px;
     height: auto;
 
 
@@ -417,11 +345,7 @@ table{
     background-color: azure;
 }
 
-#fondoFieldset{
-    border: none;
-    color: #F3EFF5;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#form{
+    height: auto;
+    width: 400px;
 }
