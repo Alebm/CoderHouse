@@ -209,7 +209,7 @@ img, svg{
     background-color: #7986cb;
     color: #F3EFF5;
     box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
-    width: auto;
+    width: 150px;
     height: auto;
     transition: all 2s;
     
