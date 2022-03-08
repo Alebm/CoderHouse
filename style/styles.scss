@@ -1,4 +1,7 @@
-
+@import "index";
+@import "community";
+@import "variables";
+@import "redes";
 
 body{
     font-size: 1rem;
@@ -53,8 +56,8 @@ img, svg{
 }
 
 .navbarback{
-    background-color: #514aac;
-    box-shadow: 0rem 0.15rem 0.5rem #00004f;
+    background-color: $navbar-background-color;
+    box-shadow: $box-shadow;
     animation: from-up 1.5s ease;
     
     
@@ -91,10 +94,10 @@ img, svg{
 .nav__button{
     border-radius: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border: 1px solid indigo;
+    border: 1px solid $background-color;
     background-color: #7986cb;
     color: #F3EFF5;
-    box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
+    box-shadow: $box-shadow;
     text-align: center;
     cursor: pointer;
 }
@@ -127,7 +130,7 @@ img, svg{
     animation: from-right 1.5s ease
 }
 
-.footer{
+/* .footer{
     grid-area: footer;
     height: 10vh;
     height: auto;
@@ -144,7 +147,7 @@ img, svg{
     color: #F3EFF5;
 
 }
-
+ */
 .nav__footer{
     display: flex;
     flex-direction: row;
@@ -176,7 +179,7 @@ img, svg{
 }
 
 .title{
-    color: indigo;
+    color: $background-color;
     font-size: 80px;
 }
 
@@ -205,10 +208,10 @@ img, svg{
 .button{
     border-radius: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border: 1px solid indigo;
+    border: 1px solid $background-color;
     background-color: #7986cb;
     color: #F3EFF5;
-    box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
+    box-shadow: $box-shadow ;
     width: 150px;
     height: auto;
     transition: all 2s;
@@ -218,10 +221,10 @@ img, svg{
 .button__firstSection{
     border-radius: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border: 1px solid indigo;
+    border: 1px solid $background-color;
     background-color: #7986cb;
     color: #F3EFF5;
-    box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
+    box-shadow: $box-shadow;
     text-align: center;
     cursor: pointer;
     width: 150px;
@@ -232,10 +235,10 @@ img, svg{
 .button__secondSection{
     border-radius: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border: 1px solid indigo;
+    border: 1px solid $background-color;
     background-color: #7986cb;
     color: #F3EFF5;
-    box-shadow: 0rem 0rem 0.5rem 0rem #00004f;
+    box-shadow: $box-shadow;
     text-align: center;
     cursor: pointer;
     width: 150px;
@@ -249,9 +252,9 @@ img, svg{
     border-radius: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: 1px solid #7986cb;
-    background-color: indigo;
+    background-color: $background-color;
     color: #F3EFF5;
-    box-shadow: 0rem 0rem 0.5rem 0rem #F3EFF5;
+    box-shadow: $box-shadow ;
     text-align: center;
     cursor: pointer;
     width: 150px;
@@ -265,9 +268,9 @@ img, svg{
     border-radius: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: 1px solid #7986cb;
-    background-color: indigo;
+    background-color: $background-color;
     color: #F3EFF5;
-    box-shadow: 0rem 0rem 0.5rem 0rem #F3EFF5;
+    box-shadow: $box-shadow ;
     text-align: center;
     cursor: pointer;
     width: 150px;
@@ -280,65 +283,13 @@ img, svg{
     border-radius: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: 1px solid #7986cb;
-    background-color: indigo;
+    background-color: $background-color;
     color: #F3EFF5;
-    box-shadow: 0rem 0rem 0.5rem 0rem #F3EFF5;
+    box-shadow: $box-shadow ;
     text-align: center;
 }
 
-.community__section{
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
-
-
-.table{
-    padding: 1rem;
-    border-radius: 1rem;
-
-}
-
-/* BEM */
-.list{
-    list-style: none;
-    border:1px solid #303a1d;
-    font-size: small;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 1rem;
-    
-}
-
-.list li{
-    align-items: center;
-    margin: 00.5rem;
-}
-
-.logros--plus{
-    list-style-type: '😊';
-    color: #18227c;
-}
-
-.logros--vip{
-    list-style-type: '😎';
-    color: #514aac;
-}
-
-.logros--oro{
-    list-style-type: '👽';
-    color: #00004f;
-}
-
-table{
-    border: 1px solid #303a1d;
-    text-align: center;
-
-    
-}
 /* para llamar por Id */
 
 #sectionIndex{

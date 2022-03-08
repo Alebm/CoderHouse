@@ -1,0 +1,13 @@
+
+$redes: ( /*Declaramos nuestro mapa*/
+    twitter: #55acee,
+    facebook:  aliceblue,
+    instagram: #C25E30
+); 
+
+@each $red, $color in $redes {
+    .fab.fa-#{$red}{
+        color: $color;
+    }
+    
+}

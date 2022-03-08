@@ -1,0 +1,63 @@
+@import "variables";
+
+.community__section{
+    height: 70vh;
+
+}
+
+/* BEM */
+.list{
+    list-style: none;
+    font-size: medium;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    ul{
+        align-items: center;
+
+
+        
+        li{
+        align-items: center;
+
+        }
+    }
+    
+}
+
+
+.logros--plus{
+    list-style-type: '😊';
+    color: $color-text-table;
+}
+
+.logros--vip{
+    list-style-type: '😎';
+    color: $color-text-table;
+}
+
+.logros--oro{
+    list-style-type: '👽';
+    color: $color-text-table;
+}
+
+table{
+    height: 400px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid indigo;
+
+    background-color: aliceblue;
+    th{
+        padding: 1rem;
+        font-size: large;
+        border: 1PX solid indigo;
+        
+    }
+    td{
+        padding: 1rem;
+        height: auto;
+        border: 1PX solid indigo;
+    }
+}

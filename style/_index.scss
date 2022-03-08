@@ -1,0 +1,16 @@
+
+.footer{
+    grid-area: footer;
+    height: 10vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #514aac;
+    align-items: center;
+    ul{
+        list-style: none;
+        color: #F3EFF5;
+    
+    }
+}
