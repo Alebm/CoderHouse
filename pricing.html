@@ -5,17 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css">
 
     <!--Boostrap-v5-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
 
 
-    <!--Font Awesome para los iconos de redes sociales-->
+    <!--Font Awe
+some para los iconos de redes sociales-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,23 +23,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbarback navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-2 mb-3">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"
-                style="color: aliceblue;background-color: aliceblue;border-color: aliceblue;background-image: url(img/analytics.png); border-inline-start-color: aliceblue">
-                <span class="navbar-toggler-icon"
-                    style="border-color: aliceblue; background-image: url(img/analytics.png);"></span>
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav mx-auto">
-                    <li class="nav__item"><a class="nav__link" href="index.html">Index</a></li>
-                    <li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
-                    <img class="logo" href="index.html" src="img/logo.svg" alt="logo html" />
-                    <li class="nav__item"><a class="nav__link" href="community.html">Community</a></li>
-                    <li class="nav__item"><a class="nav__link" href="support.html">Support</a></li>
-                    <li class="nav__item"><button class="nav__button"><a class="nav__link"
+            <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item m-auto p-2"><a class="nav-link" href="index.html">Index</a></li>
+                    <li class="nav-item m-auto p-2"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <img class="navbar-brand m-auto p-2" href="index.html" src="img/logoipsum-logo-32.svg"
+                        alt="logo html" />
+                    <li class="nav-item m-auto p-2"><a class="nav-link" href="community.html">Community</a></li>
+                    <li class="nav-item m-auto p-2"><a class="nav-link" href="support.html">Support</a></li>
+                    <li class="nav-item m-auto p-2"><button class="btn btn-primary shadow"><a class="nav-link"
                                 href="register.html">Register</a></button></li>
                 </ul>
             </div>
@@ -52,24 +47,21 @@
 
 
 
-    <footer class="footer">
+
+
+
+    <footer class="container-fluid bg-primary p-3">
         <div class="row">
             <div class="col-md">
-                <div class="container-fluid">
-                    <ul class="nav__footer">
-                        <li>Mobile App</li>
-                        <li>Community</li>
-                        <li>Company</li>
-                        <img class="navbar-brand" src="img/logo.svg" alt="Logo" />
-                        <li>Help desk</li>
-                        <li>blog</li>
-                        <li>Resources</li>
+                <div class="container">
+                    <ul class="nav">
+                        <img class="navbar-brand" src="img/logoipsum-logo-32.svg" alt="Logo" />
                     </ul>
                 </div>
             </div>
             <div class="col-md">
-                <div class="container-fluid">
-                    <ul class="nav__social">
+                <div class="container">
+                    <ul class="nav">
                         <li><i class="fab fa-facebook"></i></li>
                         <li><i class="fab fa-instagram"></i></li>
                         <li><i class="fab fa-twitter"></i></li>
@@ -78,10 +70,6 @@
             </div>
         </div>
     </footer>
-
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
+    <script src="js/bootstrap.js"></script>
 </body>
