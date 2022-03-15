@@ -8,3 +8,13 @@ $box-shadow: 0rem 0.15rem 0.5rem #00004f;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.navbar{
+    z-index: 3;
+}
+
+.carousel-item{
+    max-width: auto;
+    max-height: 500px;
+    background-size: cover;
+}
+
