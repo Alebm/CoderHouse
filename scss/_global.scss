@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap');
+@import 'animaciones';
+
+$font-family-base: 'Roboto', sans-serif;
+$primary: #514AAC;
+$navbar-dark-color: aliceblue;
+$btn-border-radius: 10px;
+$box-shadow: 0rem 0.15rem 0.5rem #00004f;
+$text-shadow-bajo:0.05rem 0.05rem 0.5rem #00004f,
+-0.05rem -0.05rem 0.5rem #00004f,
+-0.05rem 0.05rem 0.5rem #00004f,
+0.05rem -0.05rem 0.5rem #00004f ;
+
+$text-shadow-alto:0.25rem 0.25rem 0.5rem #00004f,
+-0.25rem -0.25rem 0.5rem #00004f,
+-0.25rem 0.25rem 0.5rem #00004f,
+0.25rem -0.25rem 0.5rem #00004f ;
+
+$right: from-right 1.5s ease;
+$left: from-left 1.5s ease;
+$up: from-up 1.5s ease;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    font-family: $font-family-base;
+
+}
+
+@mixin flex($align, $justify, $wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    
+}
+
+@mixin grid($align, $justify) {
+    display: grid;
+    align-content: $align;
+    justify-content: $justify;
+
+    
+}
+
+.header{
+    padding: 2rem;
+    background-color: $primary;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 3;
+    box-shadow: $box-shadow;
+}
+
+.nav{
+    width: 60%;
+    margin: auto;
+    display: flex;
+
+    ul{
+        width: 100%;
+        margin: auto;
+        list-style-type: none;
+        @include flex(center,space-evenly, nowrap);
+
+        a{
+            text-decoration: none;
+            color: $navbar-dark-color;
+            font-size: 1.2rem;
+            display: flex;
+            transition: all 400ms ease;
+            text-shadow: $text-shadow-bajo;
+        }
+        
+        a:hover{
+            transform: scale(1.2);
+            text-shadow: $text-shadow-alto;
+        }
+        
+        
+    }
+    
+}
+
+li{
+    list-style: none;
+}
+
+.contenido{
+    width: 70%;
+    min-height: calc(100vh - 230px);
+
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+
+}
+
+.contenido__parrafos{
+ @include grid(space-evenly,center);
+ justify-items:center;
+}
+
+.contenido__img{
+    @include grid(center, center);
+    img{
+        height: 300px;
+        width: auto;
+    }
+    
+
+}
+
+.contenido{  
+    
+    
+    .carousel{
+        @include grid(space-evenly,none);
+        justify-items: center;
+        grid-column-start: 1 ;
+        grid-column-end: -1 ;
+        
+        img{
+            width: 37%
+            
+        }
+    
+
+    }
+
+} 
+
+.contenido__community{
+    @extend .contenido;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.contenido__pricing{
+    @extend .contenido;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.contenido__support{
+    @extend .contenido;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.footer{
+    padding: 1.5rem;
+    background-color: $primary;
+    display: flex;
+
+
+    
+    .nav__footer{
+        width: 80%;
+        margin: auto;
+        @include flex(center,space-around, nowrap);
+
+
+        .nav__social{
+            width: 50%;
+            display: flex;
+
+
+
+            ul{
+                width: 100%;
+                list-style-type: none;
+                @include flex(center,space-evenly, nowrap);
+            }
+
+        }
+    }
+    
+}
+
+button{
+    background-color: $primary;
+    color: $navbar-dark-color;
+    box-shadow: $box-shadow;
+    padding: 0.5rem;
+    border-radius: $btn-border-radius;
+    cursor: pointer;
+    transition: all 400ms ease;
+
+    span{
+        font-size: 1.2rem;
+    }
+    
+}
+
+button:hover{
+    transform: scale(1.25);
+}
+
+.btn{
+    @extend button;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+
+$redes: ( /*Declaramos nuestro mapa*/
+    twitter: #55acee,
+    facebook:  aliceblue,
+    instagram: #C25E30
+); 
+
+@each $red, $color in $redes {
+    .fab.fa-#{$red}{
+        color: $color;
+    }
+    
+}
+
+
+
+$imagenes: ( /*Declaramos nuestro mapa*/
+    1: $up,
+    2: $right,
+    3: $left
+); 
+
+@each $img, $animation in $imagenes {
+    .img#{$img}{
+        animation: $animation;
+    }
+    
+}
+
+img{
+    filter: drop-shadow( 5px 20px 15px rgba(0,0,79,0.5) );
+}
+

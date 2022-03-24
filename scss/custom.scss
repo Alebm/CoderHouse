@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap');
-
-$font-family-base: 'Roboto', sans-serif;
-$primary: #514AAC;
-$navbar-dark-color: aliceblue;
-$btn-border-radius: 2rem;
-$box-shadow: 0rem 0.15rem 0.5rem #00004f;
-
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'global';
+@import 'animaciones';
 
 .navbar{
     z-index: 3;
 }
 
+.main-container{
+    min-height: calc(100vh - 252px);
+    align-content: center;
+}
+
 .carousel-item{
-    max-width: auto;
+    display: block;
+    position: static;
     max-height: 500px;
     background-size: cover;
 }

@@ -23,39 +23,31 @@ some para los iconos de redes sociales-->
     <title>Document</title>
 </head>
 
-<body class="row align-content-between vh-100">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-2 mb-3">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item m-auto p-2"><a class="nav-link" href="index.html">Index</a></li>
-                    <li class="nav-item m-auto p-2"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <img class="navbar-brand m-auto p-2" href="index.html" src="img/logoipsum-logo-32.svg"
-                        alt="logo html" />
-                    <li class="nav-item m-auto p-2"><a class="nav-link" href="community.html">Community</a></li>
-                    <li class="nav-item m-auto p-2"><a class="nav-link" href="support.html">Support</a></li>
-                    <li class="nav-item m-auto p-2"><button class="btn btn-primary shadow"><a class="nav-link"
-                                href="register.html">Register</a></button></li>
-                </ul>
-            </div>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a class="nav-link" href="index.html">Index</a></li>
+                <li><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <img href="index.html" src="img/logoipsum-logo-32.svg" alt="logo html" />
+                <li><a class="nav-link" href="community.html">Community</a></li>
+                <li><a class="nav-link" href="support.html">Support</a></li>
+                <li><button class="btn btn-primary shadow"><a class="nav-link"
+                            href="register.html">Register</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="contenido__community">
+        <div>
+            <h1>Rangos de la Comunidad</h1>
         </div>
-    </nav>
 
 
-
-    <div class="container text-center p-4" style="height: 200px;width: auto;">
-        <h1 class=" title title--Community">Rangos de la Comunidad</h1>
-    </div>
-
-
-    <div class="container">
-        <section class="row m-4">
+        <div>
             <table>
                 <thead>
                     <tr>
@@ -93,32 +85,27 @@ some para los iconos de redes sociales-->
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
     </div>
 
 
-    <footer class="container-fluid bg-primary p-3 align-self-end">
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <div class="container">
-                        <ul class="nav">
-                            <img class="navbar-brand" src="img/logoipsum-logo-32.svg" alt="Logo" />
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md align-self-center">
-                    <div class="container">
-                        <ul class="nav justify-content-around ">
-                            <li><i class="fab fa-facebook"></i></li>
-                            <li><i class="fab fa-instagram"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                        </ul>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="nav__footer">
+            <div>
+                <ul>
+                    <img class="navbar-brand" src="img/logoipsum-logo-32.svg" alt="Logo" />
+                </ul>
+            </div>
+            <div class="nav__social">
+                <ul>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </ul>
             </div>
         </div>
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
