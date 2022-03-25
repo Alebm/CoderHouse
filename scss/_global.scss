@@ -7,6 +7,9 @@ $primary: #514AAC;
 $navbar-dark-color: aliceblue;
 $btn-border-radius: 10px;
 $box-shadow: 0rem 0.15rem 0.5rem #00004f;
+
+
+
 $text-shadow-bajo:0.05rem 0.05rem 0.5rem #00004f,
 -0.05rem -0.05rem 0.5rem #00004f,
 -0.05rem 0.05rem 0.5rem #00004f,
@@ -50,7 +53,7 @@ body{
     
 }
 
-.header{
+.headerl{
     padding: 2rem;
     background-color: $primary;
     display: flex;
@@ -98,7 +101,6 @@ li{
 .contenido{
     width: 60%;
     min-height: calc(100vh - 230px);
-
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -162,6 +164,20 @@ li{
     @extend .contenido;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    .card{
+        justify-items: center;
+        align-items: center;
+
+      img{
+          width: 200px;
+          height: 200px;
+
+      }
+
+
+    }
+    
 
 }
 
@@ -219,7 +235,7 @@ button:hover{
     transform: scale(1.25);
 }
 
-.btn{
+.btnl{
     @extend button;
 }
 
@@ -251,6 +267,13 @@ $imagenes: ( /*Declaramos nuestro mapa*/
 
 @each $img, $animation in $imagenes {
     .img#{$img}{
+        animation: $animation;
+    }
+    
+}
+
+@each $n, $animation in $imagenes {
+    .animation#{$n}{
         animation: $animation;
     }
     

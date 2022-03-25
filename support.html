@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!--Boostrap-v5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!--sass-->
     <link rel="stylesheet" href="css/custom.css">
 
     <!--Font Awesome para los iconos de redes sociales-->
@@ -22,7 +26,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="headerl">
         <nav class="nav">
             <img class="logo__responsive" href="index.html" src="img/logoipsum-logo-32.svg" alt="logo html" />
             <label for="check" class="bars">
@@ -35,15 +39,15 @@
                 <img href="index.html" src="img/logoipsum-logo-32.svg" alt="logo html" />
                 <li><a class="nav-link" href="community.html">Community</a></li>
                 <li><a class="nav-link" href="support.html">Support</a></li>
-                <li><button class="btn btn-primary shadow" href="register.html"><span>Register</span></button></li>
+                <li><button class="btnl" href="register.html"><span>Register</span></button></li>
             </ul>
         </nav>
     </header>
 
 
-    <div class="contenido__support">
+    <div class="contenido__support animation1">
         <form action="">
-            <fieldset class="m-5 col-4">
+            <fieldset class="m-auto col-4">
                 <div class="mb-2">
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input type="text" placeholder="Ingrese Nombre" class="form-control" name="nombre" id="nombre">
@@ -72,10 +76,14 @@
                     <label class="form-check-label" for="labelCheck">Acepta terminos y condiciones</label>
                 </div>
 
-                <div class="mb-3">
-                    <div class="btn-group">
-                        <input class="btn" type="submit" value="Enviar formulario">
-                        <input class="btn" type="reset" value="Borrar formulario">
+                <div class="mb-4 animation1">
+                    <div class="btn-toolbar justify-content-evenly" role=" toolbar">
+                        <div class="btn-group me-2" role="group">
+                            <button class="btnl" type="submit" value="Enviar formulario">Enviar</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button class="btnl" type="reset" value="Borrar formulario">Cancelar</button>
+                        </div>
                     </div>
                 </div>
             </fieldset>
