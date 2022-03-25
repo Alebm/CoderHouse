@@ -43,55 +43,59 @@ some para los iconos de redes sociales-->
                 <img href="index.html" src="img/logoipsum-logo-32.svg" alt="logo html" />
                 <li><a class="nav-link" href="community.html">Community</a></li>
                 <li><a class="nav-link" href="support.html">Support</a></li>
-                <li><button class="btnl" href="register.html"><span>Register</span></button></li>
+                <li><button class="btnl" onclick="location.href='register.html'"><span>Register</span></button></li>
             </ul>
         </nav>
     </header>
 
 
 
-    <div class="contenido__community">
+    <div class="contenido__community animation2">
         <div>
             <h1>Rangos de la Comunidad</h1>
         </div>
 
 
         <div>
-            <table>
-                <thead>
+            <table class="table">
+                <thead class="table-primary">
                     <tr>
-                        <th>BRONCE</th>
-                        <th>PLATA</th>
-                        <th>ORO</th>
+                        <th scope="col">#</th>
+                        <th scope="col">ORO</th>
+                        <th scope="col">PLATA</th>
+                        <th scope="col">BRONCE</th>
                     </tr>
                 </thead>
                 <tbody>
+
                     <tr>
-                        <td>
-                            <ul class="list logros--plus">
-                                <li>Logro 1</li>
-                                <li>Logro 2</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="list logros--vip">
-                                <li>Logro 1</li>
-                                <li>Logro 2</li>
-                                <li>logro 3</li>
-                                <li>logro 4</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="list logros--oro">
-                                <li>Logro 1</li>
-                                <li>Logro 2</li>
-                                <li>logro 3</li>
-                                <li>logro 4</li>
-                                <li>logro 5</li>
-                                <li>logro 6</li>
-                            </ul>
-                        </td>
+                        <th scope="rows">1</th>
+                        <td>Rocky</td>
+                        <td>Rocky</td>
+                        <td>Rocky</td>
                     </tr>
+                    <tr>
+                        <th scope="rows">2</th>
+                        <td>Amateur</td>
+                        <td>Amateur</td>
+                        <td>Amateur</td>
+                    </tr>
+                    <tr>
+                        <th scope="rows">3</th>
+                        <td>Novato</td>
+                        <td colspan="2">Novato</td>
+                    </tr>
+                    <tr>
+                        <th scope="rows">4</th>
+                        <td>Junior</td>
+                        <td colspan="2">Junior</td>
+                    </tr>
+                    <tr>
+                        <th scope="rows">5</th>
+                        <td colspan="3">Profesional</td>
+                    </tr>
+
+
                 </tbody>
             </table>
         </div>

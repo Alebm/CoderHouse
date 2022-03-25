@@ -42,16 +42,66 @@ some para los iconos de redes sociales-->
                 <img href="index.html" src="img/logoipsum-logo-32.svg" alt="logo html" />
                 <li><a class="nav-link" href="community.html">Community</a></li>
                 <li><a class="nav-link" href="support.html">Support</a></li>
-                <li><button class="btnl" href="register.html"><span>Register</span></button></li>
+                <li><button class="btnl" onclick="location.href='register.html'"><span>Register</span></button></li>
             </ul>
         </nav>
     </header>
 
 
 
-    <div class="contenido">
+    <div class="contenido__support animation1">
+        <form action="">
+            <fieldset class="m-auto col-4">
+                <div class="mb-2">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" placeholder="Ingrese Nombre" class="form-control" name="nombre" id="nombre">
+                </div>
 
+                <div class="mb-2">
+                    <label for="apellido" class="form-label">Apellido:</label>
+                    <input type="text" placeholder="Ingrese Apellido" class="form-control" name="apellido"
+                        id="apellido">
+                </div>
+
+                <div class="mb-2">
+                    <label for="Email" class="form-label">Email:</label>
+                    <input type="text" placeholder="Ingrese Email" class="form-control" name="Email" id="Email">
+                </div>
+
+                <div class="mb-2">
+                    <label for="Email" class="form-label">Contraseña:</label>
+                    <input type="password" placeholder="Ingrese Contraseña" class="form-control" name="Email"
+                        id="Email">
+                </div>
+
+
+                <div class="mb-4 animation1">
+                    <div class="btn-toolbar justify-content-evenly" role=" toolbar">
+                        <div class="btn-group p-2" role="group">
+                            <button class="btnl" type="submit" value="Registrar">Registrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 animation1">
+                    <div class="btn-toolbar justify-content-evenly" role=" toolbar">
+                        <div class="btn-group" role="group">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <i class="fab fa-google"></i>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
+
 
 
 

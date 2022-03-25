@@ -156,7 +156,12 @@ li{
 .contenido__community{
     @extend .contenido;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 30% repeat(1, 1fr);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h1{
+        text-align: center;
+    }
 
 }
 
@@ -165,6 +170,8 @@ li{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     .card{
         justify-items: center;
         align-items: center;
@@ -185,6 +192,8 @@ li{
     @extend .contenido;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .footer{
     padding: 1.5rem;
@@ -247,12 +256,16 @@ i{
 $redes: ( /*Declaramos nuestro mapa*/
     twitter: #55acee,
     facebook:  aliceblue,
-    instagram: #C25E30
+    instagram: #C25E30,
+    facebook-f: #4267B2,
+    google: #DB4437,
+    apple: #555555
 ); 
 
 @each $red, $color in $redes {
     .fab.fa-#{$red}{
         color: $color;
+        cursor: pointer;
     }
     
 }
