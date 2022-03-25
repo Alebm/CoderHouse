@@ -1,19 +1,7 @@
 @import 'global';
 @import 'animaciones';
+@import 'mediaq';
 
-.navbar{
-    z-index: 3;
-}
 
-.main-container{
-    min-height: calc(100vh - 252px);
-    align-content: center;
-}
 
-.carousel-item{
-    display: block;
-    position: static;
-    max-height: 500px;
-    background-size: cover;
-}
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap');
 @import 'animaciones';
+@import 'mediaq';
 
 $font-family-base: 'Roboto', sans-serif;
 $primary: #514AAC;
@@ -94,7 +95,7 @@ li{
 }
 
 .contenido{
-    width: 70%;
+    width: 60%;
     min-height: calc(100vh - 230px);
 
     margin: auto;
@@ -116,7 +117,7 @@ li{
 .contenido__img{
     @include grid(center, center);
     img{
-        height: 300px;
+        height: 100%;
         width: auto;
     }
     
@@ -133,8 +134,15 @@ li{
         grid-column-end: -1 ;
         
         img{
-            width: 37%
+            width: 37%;
+            justify-self: center
             
+            
+        }
+
+        h1{
+            font-size: 3rem;
+
         }
     
 
