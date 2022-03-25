@@ -135,39 +135,38 @@
 
 @media (max-width: 890px) {
   .header {
-    /* position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index: 3;
-        box-shadow: $box-shadow;
-        transition: all 0.5s; */
-  }
-  .contenido, .contenido__community, .contenido__pricing, .contenido__support {
-    min-height: calc(100vh - 230px);
+    z-index: 3;
   }
   .nav {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .nav .nav__menu {
-    display: none;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 30%;
+    height: 300px;
     top: 121px;
-    background-color: aliceblue;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    z-index: 1;
+    background-color: rgba(81, 74, 172, 0.5);
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    -webkit-transition: -webkit-clip-path 0.5s ease-in-out;
+    transition: -webkit-clip-path 0.5s ease-in-out;
+    transition: clip-path 0.5s ease-in-out;
+    transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
   }
   .nav .nav__menu img {
     display: none;
@@ -183,9 +182,11 @@
     display: none;
   }
   .nav #check:checked ~ .nav__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+    opacity: 1;
+    -webkit-box-shadow: 0rem 0.15rem 0.5rem #00004f;
+            box-shadow: 0rem 0.15rem 0.5rem #00004f;
   }
 }
 
@@ -225,7 +226,7 @@ body {
   display: flex;
 }
 
-.nav ul {
+.nav .nav__menu {
   width: 100%;
   margin: auto;
   list-style-type: none;
@@ -240,9 +241,11 @@ body {
           justify-content: space-evenly;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.nav ul a {
+.nav .nav__menu a {
   text-decoration: none;
   color: aliceblue;
   font-size: 1.2rem;
@@ -254,7 +257,7 @@ body {
   text-shadow: 0.05rem 0.05rem 0.5rem #00004f, -0.05rem -0.05rem 0.5rem #00004f, -0.05rem 0.05rem 0.5rem #00004f, 0.05rem -0.05rem 0.5rem #00004f;
 }
 
-.nav ul a:hover {
+.nav .nav__menu a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   text-shadow: 0.25rem 0.25rem 0.5rem #00004f, -0.25rem -0.25rem 0.5rem #00004f, -0.25rem 0.25rem 0.5rem #00004f, 0.25rem -0.25rem 0.5rem #00004f;
@@ -551,39 +554,38 @@ img {
 
 @media (max-width: 890px) {
   .header {
-    /* position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index: 3;
-        box-shadow: $box-shadow;
-        transition: all 0.5s; */
-  }
-  .contenido, .contenido__community, .contenido__pricing, .contenido__support {
-    min-height: calc(100vh - 230px);
+    z-index: 3;
   }
   .nav {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .nav .nav__menu {
-    display: none;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 30%;
+    height: 300px;
     top: 121px;
-    background-color: aliceblue;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    z-index: 1;
+    background-color: rgba(81, 74, 172, 0.5);
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    -webkit-transition: -webkit-clip-path 0.5s ease-in-out;
+    transition: -webkit-clip-path 0.5s ease-in-out;
+    transition: clip-path 0.5s ease-in-out;
+    transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
   }
   .nav .nav__menu img {
     display: none;
@@ -599,9 +601,11 @@ img {
     display: none;
   }
   .nav #check:checked ~ .nav__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+    opacity: 1;
+    -webkit-box-shadow: 0rem 0.15rem 0.5rem #00004f;
+            box-shadow: 0rem 0.15rem 0.5rem #00004f;
   }
 }
 /*# sourceMappingURL=custom.css.map */

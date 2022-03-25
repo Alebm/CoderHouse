@@ -65,11 +65,12 @@ body{
     margin: auto;
     display: flex;
 
-    ul{
+    .nav__menu{
         width: 100%;
         margin: auto;
         list-style-type: none;
         @include flex(center,space-evenly, nowrap);
+        transition: all 0.5s ease;
 
         a{
             text-decoration: none;
